@@ -6,15 +6,14 @@
 body{
         background: #fff;
         margin: auto;
-        width: 45%;
+        width: 55%;
           
         border: 4px solid black;
-        padding: 20px;
+        padding: 25px;
         }
 </style>
 </head>
 <body>  
-
 <?php
 
 $nameErr = $emailErr = $dobErr = $genderErr = $degreeErr = $bloodErr = "";
@@ -32,8 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }else if(str_word_count($name)<2){
       $nameErr = "Invalid name. Please type your full name";
       $name="";
-      }
-      
+      }  
   }
 }
 
